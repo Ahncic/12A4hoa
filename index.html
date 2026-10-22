@@ -348,7 +348,7 @@
   <div class="container">
     <div class="header-card">
       <h1 id="quizTitle">ĐỀ CƯƠNG HÓA HỌC 12 - CHƯƠNG CARBOHYDRATE</h1>
-      <div class="subtitle" id="quizSubtitle">Trường THPT Dương Văn Thì • Đầy đủ Trắc nghiệm ABCD • Đúng/Sai • Trả lời ngắn & Bài tập tự luyện</div>
+      <div class="subtitle" id="quizSubtitle">Trường THPT Dương Văn Thì • Đầy đủ 162 câu (Trang 37 - 70): Trắc nghiệm ABCD • Đúng/Sai • Trả lời ngắn & Bài tập tự luyện</div>
 
       <div class="controls">
         <div class="filter-group">
@@ -356,9 +356,9 @@
 
           <select id="typeSelect" onchange="initQuiz(false)">
             <option value="all">Tất cả dạng câu hỏi</option>
-            <option value="sa">Phần IV: Trả lời ngắn & Bài tập tự luyện</option>
-            <option value="tf">Phần III: Trắc nghiệm Đúng / Sai</option>
             <option value="mcq">Phần II: Trắc nghiệm A, B, C, D</option>
+            <option value="tf">Phần III: Trắc nghiệm Đúng / Sai</option>
+            <option value="sa">Phần I & IV: Tự luận / Trả lời ngắn / Bài tập tự luyện</option>
           </select>
 
           <select id="modeSelect" onchange="initQuiz(false)">
@@ -867,19 +867,236 @@
       },
       {
         type: "mcq", topicName: TOPIC_B5,
-        q: "Câu 10 (Trang 47). Cho các công thức cấu tạo (1), (2), (3) như hình vẽ trong đề cương. Nhận xét nào sau đây đúng?",
-        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo (1) Maltose dạng vòng, (2) Saccharose dạng vòng, (3) Maltose dạng mở vòng tại Trang 47 - Câu 10 (Bài 5) trong đề cương.",
+        q: "Câu 10 (Trang 47-48). Cho các công thức cấu tạo (1), (2), (3) như hình vẽ trong đề cương. Phát biểu nào sau đây không đúng?",
+        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo (1) Maltose dạng vòng, (2) Saccharose dạng vòng, (3) Maltose dạng mở vòng tại Trang 48 - Câu 10 (Bài 5) trong đề cương.",
         options: {
-          A: "A. (1) và (3) là công thức cấu tạo của maltose, (2) là của saccharose.",
-          B: "B. (1) và (2) là của saccharose, (3) là của maltose.",
-          C: "C. (2) và (3) là của maltose, (1) là của saccharose.",
-          D: "D. (1) là của maltose, (2) và (3) là của saccharose."
+          A: "A. Công thức cấu tạo (1) mô tả dạng mạch vòng của maltose.",
+          B: "B. Công thức cấu tạo (2) mô tả dạng mạch vòng của saccharose.",
+          C: "C. Công thức cấu tạo (3) mô tả dạng mở vòng của maltose.",
+          D: "D. Nhóm -OH(*) chỉ ở dạng α."
         },
+        ans: "D",
+        explanation: "Nhóm -OH(*) là nhóm -OH hemiacetal của maltose nên trong dung dịch có thể ở dạng α hoặc dạng β (do có khả năng mở vòng và đóng vòng trở lại)."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 11 (Trang 48). Mạch nha là tên gọi khác của carbohydrate nào sau đây?",
+        options: { A: "A. Glucose.", B: "B. Fructose.", C: "C. Saccharose.", D: "D. Maltose." },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 12 (Trang 48). Saccharose có công thức phân tử là",
+        options: { A: "A. C₁₂H₂₂O₁₁.", B: "B. C₆H₁₂O₆.", C: "C. (C₆H₁₀O₅)ₙ.", D: "D. CH₃COOH." },
         ans: "A"
       },
       {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 13 (Trang 48). Phân tử saccharose được tạo bởi",
+        options: {
+          A: "A. α-glucose và α-fructose.",
+          B: "B. β-glucose và β-fructose.",
+          C: "C. α-glucose và β-fructose.",
+          D: "D. α-glucose và β-glucose."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 14 (Trang 48). Carbohydrate nào có nhiều trong cây mía và củ cải đường?",
+        options: { A: "A. Glucose.", B: "B. tinh bột.", C: "C. Fructose.", D: "D. Saccharose." },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 15 (Trang 48). Đường mía, đường phèn có thành phần chính là đường nào dưới đây?",
+        options: { A: "A. Glucose.", B: "B. Maltose.", C: "C. Saccharose.", D: "D. Fructose." },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 16 (Trang 48). Sản phẩm của phản ứng thủy phân saccharose là",
+        options: { A: "A. Glucose và fructose.", B: "B. ethyl alcohol.", C: "C. glucose.", D: "D. fructose." },
+        ans: "A"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 17 (Trang 48-49). Chất nào sau đây không có phản ứng thủy phân ?",
+        options: { A: "A. Maltose.", B: "B. Saccharose.", C: "C. Tristearin.", D: "D. Fructose." },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 18 (Trang 49). Số nguyên tử oxygen trong phân tử saccharose là",
+        options: { A: "A. 11.", B: "B. 6.", C: "C. 5.", D: "D. 12." },
+        ans: "A"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 19 (Trang 49). Maltose là một loại disaccharide có nhiều trong mạch nha. Công thức phân tử của maltose là",
+        options: { A: "A. C₆H₁₂O₆.", B: "B. (C₆H₁₀O₅)ₙ.", C: "C. C₁₂H₂₂O₁₁.", D: "D. C₃H₆O₂." },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 20 (Trang 49). Maltose được tạo ra từ quá trình nào sau đây?",
+        options: {
+          A: "A. Thủy phân saccharose.",
+          B: "B. Thuỷ phân tinh bột.",
+          C: "C. Kết hợp glucose và fructose.",
+          D: "D. Lên men ethanol."
+        },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 21 (Trang 49). Saccharose tham gia phản ứng nào sau đây?",
+        options: {
+          A: "A. Phản ứng với thuốc thử Tollens.",
+          B: "B. Phản ứng với nước bromine.",
+          C: "C. Phản ứng với Cu(OH)₂ tạo dung dịch màu xanh lam.",
+          D: "D. Phản ứng thuỷ phân trong môi trường kiềm."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 22 (Trang 49). Saccharose được cấu tạo từ:",
+        options: {
+          A: "A. hai đơn vị glucose qua liên kết α-1,4-glycoside.",
+          B: "B. một đơn vị glucose và một đơn vị fructose qua liên kết α-1,2-glycoside.",
+          C: "C. hai đơn vị fructose qua liên kết β-1,4-glycoside.",
+          D: "D. một đơn vị glucose và một đơn vị galactose qua liên kết α-1,4-glycoside."
+        },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 23 (Trang 49). Carbohydrate X là một disaccharide có nhiều trong củ cải đường. Thủy phân hoàn toàn X trong môi trường acid thu được Y có khả năng làm mất màu nước bromine. Tên gọi của X và Y lần lượt là",
+        options: {
+          A: "A. Maltose, glucose.",
+          B: "B. Saccharose, fructose.",
+          C: "C. Saccharose, glucose.",
+          D: "D. Maltose, fructose."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 24 (Trang 49). Saccharose là một disaccharide. Phát biểu nào sau đây về saccharose là đúng?",
+        options: {
+          A: "A. Saccharose không bị thuỷ phân trong môi trường acid.",
+          B: "B. Thuỷ phân saccharose chỉ thu được glucose.",
+          C: "C. Thuỷ phân saccharose thu được cả glucose và fructose.",
+          D: "D. Thuỷ phân saccharose chỉ thu được fructose."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 25 (Trang 50). Khi cho dung dịch saccharose vào ống nghiệm chứa Cu(OH)₂/NaOH, lắc nhẹ ống nghiệm thì thấy có hiện tượng nào sau đây?",
+        options: {
+          A: "A. Kim loại màu vàng sáng bám trên bề mặt ống nghiệm.",
+          B: "B. Kết tủa màu đỏ gạch xuất hiện trong ống nghiệm.",
+          C: "C. Dung dịch trở nên đồng nhất và có màu xanh lam.",
+          D: "D. Chất lỏng trong ống nghiệm tách thành hai lớp và xuất hiện kết tủa màu xanh nhạt lắng xuống đáy ống nghiệm."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 26 (Trang 50). Thủy phân 68,4 gam saccharose với hiệu suất 75%, thu được m gam glucose. Giá trị của m là",
+        options: { A: "A. 54.", B: "B. 27.", C: "C. 72.", D: "D. 36." },
+        ans: "B",
+        explanation: "• n_saccharose = 68,4 / 342 = 0,2 mol.\n• Với H = 75% → n_glucose = 0,2 × 75% = 0,15 mol → m_glucose = 0,15 × 180 = 27 gam."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 27 (Trang 50). Cho các phát biểu sau:\n(a) Saccharose là một monosaccharide.\n(b) Saccharose là chất rắn, vị ngọt, tan tốt trong nước ở điều kiện thường.\n(c) Maltose là đồng phân của saccharose.\n(d) Maltose có vị ngọt hơn glucose.\n(e) Saccharose và maltose đều có cấu tạo dạng mạch hở và mạch vòng.\nSố phát biểu đúng là",
+        options: { A: "A. 2.", B: "B. 3.", C: "C. 4.", D: "D. 5." },
+        ans: "A",
+        explanation: "Có 2 phát biểu đúng là (b) và (c).\n• (a) sai vì saccharose là disaccharide.\n• (d) sai vì maltose có độ ngọt thấp hơn glucose.\n• (e) sai vì saccharose chỉ có cấu tạo dạng mạch vòng, không có dạng mạch hở."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B5,
+        q: "Câu 28 (Trang 50). Cho các phát biểu sau:\n(a) Glucose và maltose đều có nhóm -OH hemiacetal.\n(b) Fructose và saccharose đều hòa tan được Cu(OH)₂ trong môi trường kiềm ở điều kiện thường.\n(c) Glucose và fructose đều tham gia phản ứng tráng bạc.\n(d) Glucose, fructose, saccharose đều có phản ứng thủy phân.\n(e) Maltose và saccharose đều là các hợp chất hữu cơ tạp chức.\nSố phát biểu đúng là",
+        options: { A: "A. 2.", B: "B. 3.", C: "C. 4.", D: "D. 5." },
+        ans: "C",
+        explanation: "Có 4 phát biểu đúng là (a), (b), (c), (e). Phát biểu (d) sai vì glucose và fructose không bị thủy phân."
+      },
+      {
         type: "tf", topicName: TOPIC_B5,
-        q: "Câu 35 (Trang 52). Cho các phát biểu sau về saccharose và maltose:",
+        q: "Câu 29 (Trang 50-51 - Phần III). Các phát biểu về cấu tạo của saccharose và maltose:",
+        items: {
+          a: "a) Maltose được tạo thành từ hai đơn vị fructose.",
+          b: "b) Maltose có liên kết α-1,4-glycoside giữa hai đơn vị glucose.",
+          c: "c) Phân tử saccharose chứa một liên kết β-1,2-glycoside.",
+          d: "d) Phân tử saccharose chỉ tồn tại ở dạng mạch vòng."
+        },
+        ans: { a: "S", b: "Đ", c: "S", d: "Đ" },
+        explanation: "• Ý a sai: Maltose tạo từ 2 đơn vị glucose.\n• Ý c sai: Saccharose chứa liên kết α-1,2-glycoside."
+      },
+      {
+        type: "tf", topicName: TOPIC_B5,
+        q: "Câu 30 (Trang 51 - Phần III). Các phát biểu về tính chất của saccharose và maltose:",
+        items: {
+          a: "a) Saccharose không thể tạo dung dịch màu xanh lam khi phản ứng với Cu(OH)₂.",
+          b: "b) Saccharose không phản ứng với thuốc thử Tollens.",
+          c: "c) Saccharose có thể bị thuỷ phân thành glucose và fructose.",
+          d: "d) Maltose có thể phản ứng với thuốc thử Tollens và làm mất màu nước bromine."
+        },
+        ans: { a: "S", b: "Đ", c: "Đ", d: "Đ" }
+      },
+      {
+        type: "tf", topicName: TOPIC_B5,
+        q: "Câu 31 (Trang 51 - Phần III). Các phát biểu về trạng thái tự nhiên và ứng dụng của saccharose và maltose:",
+        items: {
+          a: "a) Saccharose và maltose thường được sử dụng trong sản xuất bánh kẹo.",
+          b: "b) Saccharose chất rắn kết tinh màu trắng, vị ngọt, dễ tan trong nước nóng.",
+          c: "c) Dung dịch saccharose không hoà tan được Cu(OH)₂.",
+          d: "d) Dung dịch saccharose tham gia phản ứng tráng bạc."
+        },
+        ans: { a: "Đ", b: "Đ", c: "S", d: "S" }
+      },
+      {
+        type: "tf", topicName: TOPIC_B5,
+        q: "Câu 32 (Trang 51 - Phần III). Cho các phát biểu sau:",
+        items: {
+          a: "a) Saccharose là nguồn cung cấp năng lượng quan trọng cho con người.",
+          b: "b) Dung dịch saccharose có thể hoà tan được Cu(OH)₂ tạo thành dung dịch màu tím.",
+          c: "c) Saccharose có nhiều trong cây mía, củ cải đường và hoa thốt nốt.",
+          d: "d) Maltose có trong một số hạt nảy mầm từ quá trình thuỷ phân tinh bột."
+        },
+        ans: { a: "Đ", b: "S", c: "Đ", d: "Đ" },
+        explanation: "Ý b sai vì saccharose hòa tan Cu(OH)₂ tạo dung dịch màu xanh lam."
+      },
+      {
+        type: "tf", topicName: TOPIC_B5,
+        q: "Câu 33 (Trang 51 - Phần III). Cho các phát biểu sau:",
+        items: {
+          a: "a) Saccharose còn được gọi là đường nho.",
+          b: "b) Saccharose thủy phân trong môi trường acid tạo ra một loại monosaccharide.",
+          c: "c) Dung dịch saccharose không hòa tan được Cu(OH)₂.",
+          d: "d) Phân biệt fructose và saccharose bằng phản ứng tráng gương."
+        },
+        ans: { a: "S", b: "S", c: "S", d: "Đ" },
+        explanation: "• Ý a sai: Đường nho là glucose, còn saccharose là đường mía.\n• Ý b sai: Thủy phân saccharose tạo 2 loại monosaccharide là glucose và fructose.\n• Ý c sai: Saccharose hòa tan được Cu(OH)₂ tạo dung dịch xanh lam."
+      },
+      {
+        type: "tf", topicName: TOPIC_B5,
+        q: "Câu 34 (Trang 51 - Phần III). Cho các phát biểu sau:",
+        items: {
+          a: "a) Dạng mạch hở của maltose chứa nhóm aldehyde nên maltose có thể phản ứng với thuốc thử Tollens hay dung dịch nước bromine.",
+          b: "b) Saccharose chỉ tồn tại dạng mạch vòng, không chứa nhóm aldehyde nên saccharose không có phản ứng với thuốc thử Tollens và nước bromine.",
+          c: "c) Saccharose có trong nhiều loài thực vật, có nhiều nhất trong cây mía, củ cải đường và hoa thốt nốt.",
+          d: "d) Phân tử maltose cấu tạo từ hai đơn vị glucose qua liên kết α-1,2-glycoside."
+        },
+        ans: { a: "Đ", b: "Đ", c: "Đ", d: "S" },
+        explanation: "Ý d sai vì hai đơn vị glucose trong maltose liên kết qua liên kết α-1,4-glycoside."
+      },
+      {
+        type: "tf", topicName: TOPIC_B5,
+        q: "Câu 35 (Trang 51-52). Cho các phát biểu sau về saccharose và maltose:",
         items: {
           a: "a) Tiêu thụ nhiều saccharose và maltose trong chế độ ăn uống hàng ngày có thể tăng nguy cơ sâu răng do chúng cung cấp nguồn thức ăn cho vi khuẩn gây hại trong miệng và chuyển hóa thành acid gây hại cho men răng.",
           b: "b) Khi đun nóng saccharose với dung dịch HCl thu được dung dịch phản ứng với Cu(OH)₂ (có mặt dung dịch NaOH, đun nóng), tạo kết tủa đỏ gạch.",
@@ -948,70 +1165,304 @@
       // ==================== BÀI 6: TINH BỘT VÀ CELLULOSE (TRANG 55 - 62) ====================
       {
         type: "mcq", topicName: TOPIC_B6,
-        q: "Câu 6 (Trang 55). Cho cấu tạo một đoạn mạch amylose như hình vẽ. Liên kết giữa các đơn vị mắt xích trong phân tử amylose là",
-        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch không nhánh của Amylose tại Trang 55 - Câu 6 (Bài 6) trong đề cương.",
+        q: "Câu 6 (Trang 55). Công thức cấu tạo sau mô tả:",
+        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch không phân nhánh (liên kết α-1,4-glycoside) tại Trang 55 - Câu 6 (Bài 6) trong đề cương.",
         options: {
-          A: "A. liên kết α-1,4-glycoside.",
-          B: "B. liên kết β-1,4-glycoside.",
-          C: "C. liên kết α-1,6-glycoside.",
-          D: "D. liên kết α-1,2-glycoside."
+          A: "A. Saccharose.",
+          B: "B. Amylopectin.",
+          C: "C. Amylose.",
+          D: "D. Cellulose."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 7 (Trang 55). Công thức cấu tạo sau mô tả:",
+        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch phân nhánh (liên kết α-1,4 và α-1,6-glycoside) tại Trang 55 - Câu 7 (Bài 6) trong đề cương.",
+        options: {
+          A: "A. Maltose.",
+          B: "B. Cellulose.",
+          C: "C. Amylose.",
+          D: "D. Amylopectin."
+        },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 8 (Trang 55). Công thức cấu tạo sau mô tả:",
+        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch không phân nhánh (liên kết β-1,4-glycoside) tại Trang 55 - Câu 8 (Bài 6) trong đề cương.",
+        options: {
+          A: "A. Amylose.",
+          B: "B. Cellulose.",
+          C: "C. Saccharose.",
+          D: "D. Amylopectin."
+        },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 9 (Trang 55-56). Carbohydrate nào sau đây được dùng để điều chế thuốc súng không khói?",
+        options: {
+          A: "A. Saccharose.",
+          B: "B. Cellulose.",
+          C: "C. Tinh bột.",
+          D: "D. Glucose."
+        },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 10 (Trang 56). Phân tử cellulose cấu tạo từ các đơn vị nào sau đây?",
+        options: { A: "A. α-glucose.", B: "B. β-glucose.", C: "C. Fructose.", D: "D. Galactose." },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 11 (Trang 56). Tinh bột chứa hỗn hợp chất nào sau đây?",
+        options: {
+          A: "A. Glucose và fructose.",
+          B: "B. Amylose và cellulose.",
+          C: "C. Amylose và amylopectin.",
+          D: "D. Glucose và galactose."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 12 (Trang 56). Amylopectin khác biệt cơ bản với amylose ở điểm nào sau đây?",
+        options: {
+          A: "A. Có cấu tạo mạch phân nhánh.",
+          B: "B. Chỉ chứa liên kết α-1,4-glycoside.",
+          C: "C. Không tan trong nước.",
+          D: "D. Tạo màu xanh tím với iodine."
         },
         ans: "A"
       },
       {
         type: "mcq", topicName: TOPIC_B6,
-        q: "Câu 7 (Trang 55-56). Cho cấu tạo một đoạn mạch amylopectin như hình vẽ. Các liên kết glycoside có trong phân tử amylopectin là",
-        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch phân nhánh của Amylopectin tại Trang 55 - 56 - Câu 7 (Bài 6) trong đề cương.",
+        q: "Câu 13 (Trang 56). Tinh bột và cellulose đều tham gia phản ứng nào sau đây?",
         options: {
-          A: "A. liên kết α-1,4-glycoside và α-1,6-glycoside.",
-          B: "B. chỉ có liên kết α-1,4-glycoside.",
-          C: "C. liên kết β-1,4-glycoside và β-1,6-glycoside.",
-          D: "D. liên kết α-1,2-glycoside và α-1,6-glycoside."
+          A: "A. Phản ứng thuỷ phân.",
+          B: "B. Phản ứng màu với dung dịch iodine.",
+          C: "C. Phản ứng với thuốc thử Tollens.",
+          D: "D. Phản ứng với nước bromine."
         },
         ans: "A"
       },
       {
         type: "mcq", topicName: TOPIC_B6,
-        q: "Câu 8 (Trang 56). Cho cấu tạo một đoạn mạch cellulose như hình vẽ. Liên kết giữa các đơn vị mắt xích trong phân tử cellulose là",
-        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch không nhánh của Cellulose tại Trang 56 - Câu 8 (Bài 6) trong đề cương.",
+        q: "Câu 14 (Trang 56). Cellulose không tan trong nước nhưng tan trong dung dịch nào sau đây?",
         options: {
-          A: "A. liên kết β-1,4-glycoside.",
-          B: "B. liên kết α-1,4-glycoside.",
-          C: "C. liên kết α-1,6-glycoside.",
-          D: "D. liên kết β-1,6-glycoside."
+          A: "A. Dung dịch NaOH.",
+          B: "B. Dung dịch ethanol.",
+          C: "C. Nước Schweizer.",
+          D: "D. Nước bromine."
+        },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 15 (Trang 56). Chất nào sau đây thuộc loại polysaccharide?",
+        options: { A: "A. Tinh bột.", B: "B. Glucose.", C: "C. Saccharose.", D: "D. Fructose." },
+        ans: "A"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 16 (Trang 56). Cellulose phản ứng với nitric acid tạo thành sản phẩm nào sau đây?",
+        options: { A: "A. Glucose.", B: "B. Dextrin.", C: "C. Maltose.", D: "D. Cellulose nitrate." },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 17 (Trang 56). Ở nhiệt độ thường, nhỏ vài giọt dung dịch iodine vào hồ tinh bột thấy xuất hiện màu:",
+        options: { A: "A. hồng.", B: "B. Xanh tím.", C: "C. nâu đỏ.", D: "D. Vàng." },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 18 (Trang 56). Để phân biệt tinh bột và cellulose ta dùng:",
+        options: {
+          A: "A. phản ứng màu với dung dịch I₂.",
+          B: "B. phản ứng với Cu(OH)₂ ở nhiệt độ phòng.",
+          C: "C. phản ứng tráng bạc.",
+          D: "D. phản ứng thủy phân."
         },
         ans: "A"
       },
       {
         type: "mcq", topicName: TOPIC_B6,
-        q: "Câu 24 (Trang 58). Quan sát cấu tạo một đoạn mạch cellulose trong đề cương, mỗi mắt xích C₆H₁₀O₅ của cellulose có bao nhiêu nhóm -OH tự do?",
-        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch Cellulose tại Trang 58 - Câu 24 (Bài 6) trong đề cương.",
-        options: { A: "A. 3.", B: "B. 4.", C: "C. 5.", D: "D. 2." },
+        q: "Câu 19 (Trang 56). Chất nào sau đây có thể thu được khi thuỷ phân không hoàn toàn tinh bột?",
+        options: { A: "A. Cellulose.", B: "B. Dextrin.", C: "C. Fructose.", D: "D. Saccharose." },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 20 (Trang 56-57). Nguyên liệu nào sau đây không phải là nguồn cung cấp tinh bột?",
+        options: { A: "A. Củ và quả.", B: "B. Hạt ngũ cốc.", C: "C. Sợi bông.", D: "D. Gạo." },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 21 (Trang 57). Trong phân tử amylose các mắt xích liên kết với nhau bằng liên kết",
+        options: {
+          A: "A. α-1,4-glycoside.",
+          B: "B. α-1,6-glycoside.",
+          C: "C. β-1,4-glycoside.",
+          D: "D. β-1,6-glycoside."
+        },
         ans: "A"
       },
       {
-        type: "tf", topicName: TOPIC_B6,
-        q: "Câu 31 (Trang 59-60). Cho đồ thị biểu diễn sự phụ thuộc tốc độ phản ứng thủy phân tinh bột nhờ xúc tác enzyme X vào nhiệt độ như hình vẽ trong đề cương:",
-        imageNote: "📌 Chú thích hình ảnh: Xem đồ thị sự phụ thuộc tốc độ phản ứng của enzyme X theo nhiệt độ (đạt cực đại tại 50°C) tại Trang 59 - 60 - Câu 31 (Bài 6) trong đề cương.",
-        items: {
-          a: "a) Tốc độ phản ứng tăng dần khi nhiệt độ tăng từ 0°C đến 50°C.",
-          b: "b) Nhiệt độ tối ưu cho hoạt động xúc tác của enzyme X là khoảng 50°C.",
-          c: "c) Khi nhiệt độ vượt quá 50°C, tốc độ phản ứng giảm dần do enzyme bị biến tính.",
-          d: "d) Ở 70°C, tốc độ phản ứng đạt giá trị lớn nhất."
-        },
-        ans: { a: "Đ", b: "Đ", c: "Đ", d: "S" }
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 22 (Trang 57). Carbohydrate X là thành phần chính tạo nên lớp màng tế bào thực vật, là bộ khung của cây cối. X là",
+        options: { A: "A. saccharose.", B: "B. cellulose.", C: "C. tinh bột.", D: "D. glucose." },
+        ans: "B"
       },
       {
-        type: "tf", topicName: TOPIC_B6,
-        q: "Câu 32 (Trang 60). Cho công thức cấu tạo đoạn mạch cellulose như hình vẽ trong đề cương:",
-        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu tạo đoạn mạch Cellulose tại Trang 60 - Câu 32 (Bài 6) trong đề cương.",
-        items: {
-          a: "a) Cellulose được cấu tạo từ các đơn vị β-glucose.",
-          b: "b) Phân tử cellulose không phân nhánh, các mắt xích liên kết với nhau bằng liên kết β-1,4-glycoside.",
-          c: "c) Thủy phân hoàn toàn cellulose trong môi trường acid thu được glucose.",
-          d: "d) Cellulose có phản ứng tráng bạc."
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 23 (Trang 57). Z là chất rắn, dạng sợi màu trắng không tan trong nước. Tên gọi của Z là",
+        options: { A: "A. Amylopectin.", B: "B. Fructose.", C: "C. Cellulose.", D: "D. Saccharose." },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 24 (Trang 57). Carbohydrate nào có cấu trúc phân tử được biểu diễn dưới đây?",
+        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu trúc mạch polime không nhánh gồm các mắt xích α-glucose liên kết α-1,4-glycoside (hệ số 1000) tại Trang 57 - Câu 24 (Bài 6) trong đề cương.",
+        options: { A: "A. Saccharose.", B: "B. Cellulose.", C: "C. Maltose.", D: "D. Amylose." },
+        ans: "D",
+        explanation: "Hình vẽ biểu diễn chuỗi polime không phân nhánh gồm các đơn vị α-glucose nối với nhau qua liên kết α-1,4-glycoside → Amylose."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 25 (Trang 57). Các chất nào sau đây đều có phản ứng thuỷ phân trong môi trường acid?",
+        options: {
+          A: "A. Tinh bột, saccharose, fructose.",
+          B: "B. Tinh bột, cellulose, saccharose.",
+          C: "C. Tinh bột, cellulose, fructose.",
+          D: "D. Tinh bột, cellulose, glucose."
         },
-        ans: { a: "Đ", b: "Đ", c: "Đ", d: "S" }
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 26 (Trang 57). Cellulose không có tính chất nào sau đây?",
+        options: {
+          A: "A. Tan trong nước Schweizer.",
+          B: "B. Phản ứng tạo màu xanh tím với iodine.",
+          C: "C. Phản ứng với nitric acid tạo cellulose nitrate.",
+          D: "D. Thuỷ phân hoàn toàn tạo glucose."
+        },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 27 (Trang 57). Cellulose không được sử dụng trong ứng dụng nào sau đây?",
+        options: {
+          A: "A. Sản xuất các thiết bị điện.",
+          B: "B. Nguyên liệu sản xuất ethanol và cellulose nitrate.",
+          C: "C. Sản xuất giấy, tơ tự nhiên và sợi nhân tạo.",
+          D: "D. Vật liệu gỗ xây dựng."
+        },
+        ans: "A"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 28 (Trang 58). Polysaccharide X là chất rắn dạng sợi, màu trắng, không mùi vị. X có nhiều trong bông nõn, gỗ, đay, gai. Thủy phân X thu được monosaccharide Y. Phát biểu nào sau đây đúng?",
+        options: {
+          A: "A. Y không tan trong nước lạnh.",
+          B: "B. X có cấu trúc mạch phân nhánh.",
+          C: "C. Phân tử khối của X là 162.",
+          D: "D. Y tham gia phản ứng AgNO₃ trong NH₃ tạo ra ammonium gluconate."
+        },
+        ans: "D",
+        explanation: "X là cellulose, Y là glucose. Glucose phản ứng với thuốc thử Tollens tạo ra ammonium gluconate và Ag."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 29 (Trang 58). Tinh bột không chỉ là chất dinh dưỡng quan trọng trong đời sống mà còn là nguyên liệu chủ yếu để sản xuất bánh, rượu, bia. Nhận định nào sau đây về tính chất của tinh bột là không đúng?",
+        options: {
+          A: "A. Dung dịch hồ tinh bột tạo với iodine hợp chất màu xanh tím.",
+          B: "B. Tinh bột có khả năng tham gia phản ứng tráng bạc.",
+          C: "C. Tinh bột bị thuỷ phân trong môi trường acid cho sản phẩm cuối cùng là glucose.",
+          D: "D. Thuỷ phân hoàn toàn tinh bột bởi enzyme amylase cho sản phẩm là glucose."
+        },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 30 (Trang 58). Trong quá trình sản xuất bia bằng phương pháp lên men sinh học, dưới tác dụng của enzyme sẽ xảy ra quá trình chuyển hoá: X → maltose → Y. Vậy X, Y tương ứng là",
+        options: {
+          A: "A. tinh bột và fructose.",
+          B: "B. cellulose và glucose.",
+          C: "C. cellulose và fructose.",
+          D: "D. tinh bột và glucose."
+        },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 31 (Trang 58). Hầu hết những phản ứng sinh hoá xảy ra nhờ sự xúc tác của các enzyme. Biểu đồ dưới đây thể hiện tốc độ của một phản ứng sinh hoá do enzyme X làm xúc tác theo nhiệt độ. Nhiệt độ tối ưu cho enzyme X hoạt động là",
+        imageNote: "📌 Chú thích hình ảnh: Xem biểu đồ tốc độ phản ứng theo nhiệt độ (đạt đỉnh tại 50°C) tại Trang 58 - Câu 31 (Bài 6) trong đề cương.",
+        options: { A: "A. 0°C.", B: "B. 50°C.", C: "C. 60°C.", D: "D. 70°C." },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 32 (Trang 58-59). Quan sát cấu trúc phân tử carbohydrate X được cho dưới đây. Phát biểu nào sau đây là đúng về carbohydrate X?",
+        imageNote: "📌 Chú thích hình ảnh: Xem hình cấu trúc phân tử Cellulose (liên kết β-1,4-glycoside, hệ số 700) tại Trang 58 - 59 - Câu 32 (Bài 6) trong đề cương.",
+        options: {
+          A: "A. X có nhiều trong trái cây chín.",
+          B: "B. X chỉ có cấu trúc mạch không phân nhánh.",
+          C: "C. X có vị ngọt hơn glucose.",
+          D: "D. X là thành phần chính của các loại hạt như ngô, gạo, đậu."
+        },
+        ans: "B",
+        explanation: "X là cellulose, chỉ có cấu trúc mạch thẳng (không phân nhánh)."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 33 (Trang 59). Chất X được tạo thành trong cây xanh nhờ quá trình quang hợp, điều kiện thường, X là chất rắn vô định hình. Thủy phân X nhờ xúc tác acid hoặc enzyme, thu được chất Y có ứng dụng làm thuốc tăng lực trong y học. Chất X và Y lần lượt là",
+        options: {
+          A: "A. tinh bột và glucose.",
+          B: "B. tinh bột và saccharose.",
+          C: "C. cellulose và saccharose.",
+          D: "D. saccharose và glucose."
+        },
+        ans: "A"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 34 (Trang 59). Cho sơ đồ chuyển hóa sau (mỗi mũi tên là một phương trình phản ứng):\nTinh bột → X → Y → Z → methyl acetate.\nCác chất Y, Z trong sơ đồ trên lần lượt là:",
+        options: {
+          A: "A. C₂H₅OH, CH₃COOH.",
+          B: "B. CH₃COOH, CH₃OH.",
+          C: "C. CH₃COOH, C₂H₅OH.",
+          D: "D. C₂H₄, CH₃COOH."
+        },
+        ans: "A",
+        explanation: "Tinh bột → Glucose (X) → C₂H₅OH (Y) → CH₃COOH (Z) → CH₃COOCH₃ (methyl acetate)."
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 35 (Trang 59). Cho sơ đồ phản ứng:\n(a) X + H₂O --(H⁺, t°)--> Y\n(b) Y + [Ag(NH₃)₂]OH → Ammonium gluconate + Ag + NH₃ + H₂O\n(c) Y --(enzyme)--> E + Z\n(d) Z + H₂O --(ánh sáng, chất diệp lục)--> X + G\nX, Y, Z lần lượt là:",
+        options: {
+          A: "A. Cellulose, fructose, carbon dioxide.",
+          B: "B. Cellulose, saccharose, carbon dioxide.",
+          C: "C. Tinh bột, glucose, ethanol.",
+          D: "D. Tinh bột, glucose, carbon dioxide."
+        },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_B6,
+        q: "Câu 36 (Trang 59-60). Cho các phát biểu sau:\n(1) Fructose và glucose đều có khả năng tham gia phản ứng tráng bạc;\n(2) Saccharose và tinh bột đều không bị thủy phân khi có acid H₂SO₄ (loãng) làm xúc tác;\n(3) Tinh bột được tạo thành trong cây xanh nhờ quá trình quang hợp;\n(4) Cellulose và saccharose đều thuộc loại disaccharide.\nPhát biểu đúng là",
+        options: {
+          A: "A. (1) và (2).",
+          B: "B. (3) và (4).",
+          C: "C. (2) và (4).",
+          D: "D. (1) và (3)."
+        },
+        ans: "D"
       },
       {
         type: "tf", topicName: TOPIC_B6,
@@ -1148,28 +1599,174 @@
 
       // ==================== ÔN TẬP CHƯƠNG CARBOHYDRATE (TRANG 64 - 70) ====================
       {
+        type: "sa", topicName: TOPIC_ONTAP,
+        q: "Câu 3 (Trang 64 - Phần I). Cho các phát biểu sau:\n(1) Cellulose có mạch không phân nhánh do các mắt xích α–glucose tạo nên.\n(2) Tinh bột được tạo thành trong cây xanh nhờ quá trình quang hợp.\n(3) Amylose có cấu trúc mạch phân nhánh.\n(4) Saccharose và tinh bột đều không bị thủy phân khi có acid H₂SO₄ (loãng) làm xúc tác.\n(5) Cellulose và saccharose đều thuộc loại disaccharide.\n(6) Mỗi mắt xích C₆H₁₀O₅ có ba nhóm OH tự do nên cellulose có công thức cấu tạo là [C₆H₇O₂(OH)₃]ₙ.\n(7) Cellulose tác dụng được với HNO₃ đặc trong H₂SO₄ đặc thu được cellulose trinitrate được dùng làm thuốc súng không khói.\n(8) Cellulose được cấu tạo bởi các đơn vị α-glucose liên kết với nhau bằng liên kết α-1,4-glycoside.\n(9) Phân tử cellulose không phân nhánh mà xoắn lại thành hình lò xo.\n(10) Cellulose trinitrate là nguyên liệu để sản xuất tơ nhân tạo.\nHãy sắp xếp các phát biểu đúng theo số thứ tự tăng dần (ví dụ: 267) hoặc nhập số lượng phát biểu đúng:",
+        ans: ["267", "3", "2, 6, 7", "2,6,7"],
+        placeholder: "Nhập 267 (hoặc 3)...",
+        explanation: "Có 3 phát biểu đúng là (2), (6), (7) → 267.\nGiải thích các câu sai:\n• (1), (8) sai: Cellulose cấu tạo từ các đơn vị β-glucose qua liên kết β-1,4-glycoside.\n• (3) sai: Amylose có mạch không phân nhánh.\n• (4) sai: Saccharose và tinh bột đều bị thủy phân khi đun nóng với H₂SO₄ loãng.\n• (5) sai: Cellulose là polysaccharide.\n• (9) sai: Phân tử cellulose duỗi thẳng (không xoắn lò xo như amylose).\n• (10) sai: Cellulose trinitrate dễ cháy nổ nên dùng làm thuốc súng không khói, không dùng làm tơ nhân tạo."
+      },
+      {
+        type: "sa", topicName: TOPIC_ONTAP,
+        q: "Câu 4 (Trang 64 - Phần I). Độ tan trong nước của glucose ở 25 °C là 91 g trong 100 g nước và ở 50 °C là 244 g trong 100 g nước. Khối lượng glucose kết tinh thu được khi làm lạnh 172 g dung dịch glucose bão hòa ở 50 °C xuống 25 °C là bao nhiêu gam? Giả thiết khi làm lạnh, sự bay hơi nước xảy ra không đáng kể.",
+        ans: ["76.5", "76,5"],
+        placeholder: "Nhập số gam glucose kết tinh...",
+        explanation: "• Ở 50 °C, cứ (100 + 244) = 344 g dung dịch bão hòa chứa 100 g H₂O và 244 g glucose.\n• Trong 172 g dung dịch bão hòa ở 50 °C có: m_H₂O = 172 × (100/344) = 50 g; m_glucose = 172 × (244/344) = 122 g.\n• Khi hạ xuống 25 °C, 50 g nước hòa tan tối đa: 50 × (91/100) = 45,5 g glucose.\n• Khối lượng glucose kết tinh tách ra: m = 122 - 45,5 = 76,5 gam."
+      },
+      {
         type: "mcq", topicName: TOPIC_ONTAP,
-        q: "Câu 1 (Trang 64). Chất nào sau đây không bị thủy phân trong môi trường acid?",
-        options: { A: "A. Fructose.", B: "B. Saccharose.", C: "C. Maltose.", D: "D. Tinh bột." },
+        q: "Câu 5 (Trang 64-65 - Phần II). Khi tồn tại ở dạng mạch vòng, các carbohydrate có vị ngọt và có nhóm -OH hemiacetal hoặc -OH hemiketal trong phân tử được gọi là đường khử, ngược lại khi phân tử các chất này không có nhóm -OH hemiacetal hoặc -OH hemiketal, chúng được gọi là đường không có tính khử. Trong các đường saccharose, maltose, glucose, fructose, đường không có tính khử là",
+        options: { A: "A. saccharose.", B: "B. glucose.", C: "C. maltose.", D: "D. fructose." },
         ans: "A"
       },
       {
         type: "mcq", topicName: TOPIC_ONTAP,
-        q: "Câu 2 (Trang 64). Thuốc thử dùng để phân biệt dung dịch glucose và dung dịch fructose là",
+        q: "Câu 6 (Trang 65). Khi đun nóng dung dịch chứa carbohydrate X và Cu(OH)₂ trong môi trường kiềm, X có phản ứng với Cu(OH)₂ tạo kết tủa đỏ gạch. X không thể là",
+        options: { A: "A. saccharose.", B: "B. glucose.", C: "C. fructose.", D: "D. maltose." },
+        ans: "A"
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 7 (Trang 65). Cho 4 carbohydrate sau: glucose, fructose, maltose, saccharose. Có bao nhiêu carbohydrate đã cho thuộc nhóm disaccharide?",
+        options: { A: "A. 1.", B: "B. 2.", C: "C. 3.", D: "D. 4." },
+        ans: "B",
+        explanation: "Có 2 disaccharide là maltose và saccharose."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 8 (Trang 65). Cho 4 carbohydrate sau: glucose, fructose, maltose, saccharose. Số carbohydrate đã cho có liên kết α-1,4-glycoside trong phân tử là",
+        options: { A: "A. 1.", B: "B. 2.", C: "C. 3.", D: "D. 4." },
+        ans: "A",
+        explanation: "Chỉ có 1 chất là maltose chứa liên kết α-1,4-glycoside."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 9 (Trang 65). Cho 4 carbohydrate sau: glucose, fructose, maltose, saccharose. Số carbohydrate đã cho có liên kết α-1,2-glycoside trong phân tử là",
+        options: { A: "A. 1.", B: "B. 2.", C: "C. 3.", D: "D. 4." },
+        ans: "A",
+        explanation: "Chỉ có 1 chất là saccharose chứa liên kết α-1,2-glycoside."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 10 (Trang 65). Carbohydrate nào sau đây có cấu trúc phân tử không đổi ở trạng thái rắn hoặc trong dung dịch?",
+        options: { A: "A. Glucose.", B: "B. Fructose.", C: "C. Saccharose.", D: "D. Maltose." },
+        ans: "C",
+        explanation: "Saccharose không còn nhóm -OH hemiacetal/hemiketal nên không mở vòng trong dung dịch, giữ nguyên cấu trúc mạch vòng như ở trạng thái rắn."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 11 (Trang 65). Cấu trúc phân tử của carbohydrate nào trong nhóm nêu trên không có nhóm -OH hemiacetal hoặc hemiketal?",
+        options: { A: "A. Glucose.", B: "B. Fructose.", C: "C. Saccharose.", D: "D. Maltose." },
+        ans: "C"
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 12 (Trang 65). Trong số các carbohydrate đã nêu (glucose, fructose, maltose, saccharose), số carbohydrate có khả năng mở vòng cho xuất hiện trở lại các nhóm aldehyde (-CHO) hoặc ketone (>C=O) là",
+        options: { A: "A. 1.", B: "B. 2.", C: "C. 3.", D: "D. 4." },
+        ans: "C",
+        explanation: "Có 3 chất có khả năng mở vòng là: glucose, fructose và maltose."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 13 (Trang 65). Cho một số tính chất: có dạng sợi (1); tan trong nước (2); dùng để sản xuất tơ nhân tạo (3); phản ứng với nitric acid đặc (xúc tác sulfuric acid đặc) (4); tham gia phản ứng tráng bạc (5); bị thuỷ phân trong dung dịch acid đun nóng (6). Các tính chất của cellulose là:",
         options: {
-          A: "A. nước bromine.",
-          B: "B. thuốc thử Tollens.",
-          C: "C. Cu(OH)₂ ở nhiệt độ thường.",
-          D: "D. dung dịch I₂."
+          A: "A. (2), (3), (4) và (5).",
+          B: "B. (3), (4), (5) và (6).",
+          C: "C. (1), (2), (3) và (4).",
+          D: "D. (1), (3), (4) và (6)."
         },
-        ans: "A"
+        ans: "D"
       },
       {
         type: "mcq", topicName: TOPIC_ONTAP,
-        q: "Câu 20 (Trang 68). Dựa vào đồ thị biểu diễn sự phụ thuộc tốc độ phản ứng của enzyme X theo nhiệt độ, nhiệt độ tối ưu của enzyme X là",
-        imageNote: "📌 Chú thích hình ảnh: Xem đồ thị tốc độ phản ứng theo nhiệt độ tại Trang 68 - Câu 20 (Phần Ôn tập chương) trong đề cương.",
-        options: { A: "A. 50°C.", B: "B. 30°C.", C: "C. 70°C.", D: "D. 40°C." },
-        ans: "A"
+        q: "Câu 14 (Trang 66). Dung dịch (1) chứa CuSO₄ trong nước, dung dịch (2) là dung dịch ammonia có hoà tan một lượng Cu(OH)₂, dung dịch (3) là dung dịch ammonia có hoà tan một lượng AgNO₃. Dung dịch nào trong số các dung dịch trên có khả năng hoà tan cellulose?",
+        options: {
+          A: "A. Dung dịch (1).",
+          B: "B. Dung dịch (2).",
+          C: "C. Dung dịch (3).",
+          D: "D. Không dung dịch nào."
+        },
+        ans: "B",
+        explanation: "Dung dịch (2) là nước Schweizer [Cu(NH₃)₄](OH)₂ có khả năng hòa tan được cellulose."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 15 (Trang 66). Chất X là chất dinh dưỡng, được dùng làm thuốc tăng lực cho người già, trẻ nhỏ và người ốm. Trong công nghiệp, X được điều chế bằng cách thủy phân chất Y. Chất Y là nguyên liệu để làm bánh kẹo, nước giải khát. Tên gọi của X, Y lần lượt là",
+        options: {
+          A: "A. Glucose và cellulose.",
+          B: "B. Saccharose và tinh bột.",
+          C: "C. Fructose và glucose.",
+          D: "D. Glucose và saccharose."
+        },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 16 (Trang 66). Tinh thể chất rắn X không màu, vị ngọt, dễ tan trong nước. X có nhiều trong cây mía, củ cải đường và hoa thốt nốt. Trong công nghiệp, X được chuyển hóa thành chất Y dùng để tráng gương, tráng ruột phích. Tên gọi của X và Y lần lượt là",
+        options: {
+          A: "A. Glucose và saccharose.",
+          B: "B. Saccharose và fructose.",
+          C: "C. Glucose và fructose.",
+          D: "D. Saccharose và glucose."
+        },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 17 (Trang 66). Trong quá trình sản xuất bia bằng phương pháp lên men sinh học, dưới tác dụng của enzyme sẽ xảy ra quá trình chuyển hoá: X → maltose → Y. X, Y tương ứng là",
+        options: {
+          A: "A. tinh bột và fructose.",
+          B: "B. cellulose và glucose.",
+          C: "C. cellulose và fructose.",
+          D: "D. tinh bột và glucose."
+        },
+        ans: "D"
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 18 (Trang 66). Cho các phát biểu sau:\n(a) Có thể dùng nước bromine để phân biệt glucose và fructose.\n(b) Trong môi trường acid, glucose và fructose có thể chuyển hoá lẫn nhau.\n(c) Có thể phân biệt glucose và fructose bằng phản ứng với dung dịch AgNO₃ trong NH₃.\n(d) Trong dung dịch, glucose và fructose đều hoà tan Cu(OH)₂ ở nhiệt độ thường cho dung dịch màu xanh lam.\n(e) Trong dung dịch, fructose tồn tại chủ yếu ở dạng mạch hở.\n(g) Trong dung dịch, glucose tồn tại chủ yếu ở dạng vòng 6 cạnh (dạng α và β).\nSố phát biểu đúng là",
+        options: { A: "A. 4.", B: "B. 5.", C: "C. 3.", D: "D. 2." },
+        ans: "C",
+        explanation: "Có 3 phát biểu đúng là (a), (d), (g)."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 19 (Trang 66). Trong số 6 carbohydrate sau: glucose, fructose, saccharose, maltose, tinh bột và cellulose, số carbohydrate có phản ứng thủy phân là",
+        options: { A: "A. 2.", B: "B. 3.", C: "C. 4.", D: "D. 5." },
+        ans: "C",
+        explanation: "Có 4 chất bị thủy phân là: saccharose, maltose, tinh bột và cellulose."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 20 (Trang 67). Hầu hết những phản ứng sinh hoá xảy ra nhờ sự xúc tác của các enzyme. Biểu đồ dưới đây thể hiện tốc độ của một phản ứng sinh hoá do enzyme X làm xúc tác theo nhiệt độ. Nhiệt độ tối ưu cho enzyme X hoạt động là",
+        imageNote: "📌 Chú thích hình ảnh: Xem đồ thị tốc độ phản ứng theo nhiệt độ tại Trang 67 - Câu 20 (Phần Ôn tập chương) trong đề cương.",
+        options: { A: "A. 0 °C.", B: "B. 50 °C.", C: "C. 60 °C.", D: "D. 70 °C." },
+        ans: "B"
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 21 (Trang 67). Thuỷ phân hoàn toàn 3,42 gam saccharose trong môi trường acid, thu được dung dịch X. Cho toàn bộ dung dịch X phản ứng hết với lượng dư dung dịch AgNO₃ trong NH₃, đun nóng, thu được m gam Ag. Giá trị của m là",
+        options: { A: "A. 21,60.", B: "B. 2,16.", C: "C. 4,32.", D: "D. 43,20." },
+        ans: "C",
+        explanation: "• n_saccharose = 3,42 / 342 = 0,01 mol.\n• n_Ag = 0,01 × 4 = 0,04 mol → m_Ag = 0,04 × 108 = 4,32 gam."
+      },
+      {
+        type: "mcq", topicName: TOPIC_ONTAP,
+        q: "Câu 22 (Trang 67). Trong công nghiệp, saccharose là nguyên liệu để thủy phân thành glucose và fructose dùng trong kĩ thuật tráng gương, ruột phích. Để thu được 27 kg glucose cần thủy phân m kg saccharose với hiệu suất phản ứng là 60%. Giá trị của m là",
+        options: { A: "A. 25,65.", B: "B. 85,50.", C: "C. 42,75.", D: "D. 51,30." },
+        ans: "B",
+        explanation: "• n_glucose = 27 / 180 = 0,15 kmol.\n• Với H = 60% → m_saccharose = (0,15 × 342) / 60% = 85,50 kg."
+      },
+      {
+        type: "tf", topicName: TOPIC_ONTAP,
+        q: "Câu 23 (Trang 67-68 - Phần III). Cho các carbohydrate: glucose, fructose, saccharose, maltose.",
+        items: {
+          a: "a) Cả 4 chất ở điều kiện thường đều là chất rắn, vị ngọt, tan tốt trong nước.",
+          b: "b) Có 2 cặp chất là đồng phân của nhau.",
+          c: "c) Có 3 chất vừa có cấu tạo dạng mạch hở, vừa có cấu tạo dạng mạch vòng.",
+          d: "d) Có 2 chất có nhóm -OH hemiacetal."
+        },
+        ans: { a: "Đ", b: "Đ", c: "Đ", d: "Đ" },
+        explanation: "• Ý a đúng.\n• Ý b đúng: 2 cặp đồng phân là (glucose, fructose) và (saccharose, maltose).\n• Ý c đúng: 3 chất vừa có dạng mạch hở vừa có dạng mạch vòng là glucose, fructose và maltose.\n• Ý d đúng: Có 2 chất có nhóm -OH hemiacetal là glucose và maltose (fructose có nhóm -OH hemiketal, còn saccharose không có nhóm -OH hemiacetal/hemiketal)."
       },
       {
         type: "tf", topicName: TOPIC_ONTAP,
@@ -1327,7 +1924,7 @@
           ? "Trắc nghiệm ABCD (0.25đ)"
           : item.type === "tf"
           ? "Phần III: Đúng / Sai (Tối đa 1.0đ)"
-          : "Phần IV: Trả lời ngắn / Tự luyện (0.25đ)";
+          : "Trả lời ngắn / Tự luyện (0.25đ)";
 
         const imageNoteHtml = item.imageNote
           ? `<div class="image-note-box">${item.imageNote}</div>`
@@ -1633,6 +2230,9 @@
 
     populateTopics();
     initQuiz(false);
+  </script>
+</body>
+</html>
   </script>
 </body>
 </html>
